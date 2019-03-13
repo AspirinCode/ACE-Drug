@@ -23,6 +23,7 @@ In order to observe the effect of augmentations, we trained the models with "Lar
 
 ### Exp.2 : Effect of the normalization techniques
 Normalization techniques, i.e. batch/layer/instance/weight/... normalizations, have been widely adopted in deep neural networks to accerelate training process. However, to the best of our knowledge, we could not find studies on the effect of normalizations to graph neural network. 
+
 To elucidate it, we tested the effect of three normalization techniques, i.e. batch/layer/instance normalization.
 * Change of model accuracy as the number of training epoch increases
 * Model performances with respect to the three normalization techniques
@@ -30,8 +31,9 @@ To elucidate it, we tested the effect of three normalization techniques, i.e. ba
 ### Exp.3 : Effect of the regularization techniques
 Deep neural networks promise to predict molecular properties when plentiful training samples are prepared. 
 However, data-hungry problems always stand together with drug-related applications. 
-We provide regularization techniques - l2-regularization, dropout and concrete dropout. 
+We provide regularization techniques: L2-regularization, dropout and concrete dropout. 
 The concrete dropout enables us to avoid manual searching of optimal dropout probabilities for each layer and determine it with optimization process. 
+
 We show the following experimental results:
 * Comparison of performances on ML and MAP model estimations
 * Comparison of manual dropout searching and of using concrete dropout
